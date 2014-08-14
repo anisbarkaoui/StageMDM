@@ -1,0 +1,22 @@
+#!/bin/bash
+
+echo ""
+echo -n
+
+echo  "Web Service PORT: "
+read port
+echo "-----------------"
+echo ""
+echo -n
+
+echo "Id Node to kill :"
+read id
+echo "-----------------"
+echo ""
+echo -n
+
+
+
+echo "Killing ..."
+echo -n
+curl -X DELETE  http://0.0.0.0:$port/hadoop/$id

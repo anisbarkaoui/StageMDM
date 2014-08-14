@@ -1,0 +1,22 @@
+#!/bin/bash
+
+echo ""
+echo -n
+
+echo  "Web Service PORT: "
+read port
+echo "-----------------"
+echo ""
+echo -n
+
+echo "Id Node :"
+read id
+echo "-----------------"
+echo ""
+echo -n
+
+
+
+echo "Starting ..."
+echo -n
+curl -X GET  http://0.0.0.0:$port/hadoop/$id
